@@ -8,6 +8,7 @@
 	max-width: 1058px;
 	margin: auto;
 }
+
 header {
 	background: rebeccapurple;
 	text-align: center;
@@ -29,8 +30,11 @@ nav {
 	border-top: 2px solid rebeccapurple;
 	box-shadow: 0 4px 3px rgba(0,0,0,.5); 
 }
+
 nav ul {
+
 }
+
 nav ul li {
 	list-style: none;
 	display: inline-block;
@@ -74,7 +78,7 @@ main p {
 	margin: 10px 0 30px 0;
 }
 
-#products {
+#order {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -83,7 +87,7 @@ main p {
 	margin-top: 20px;
 }
 
-#products > div {
+#order > div {
 margin-bottom: 30px;       
 }
 
@@ -96,7 +100,7 @@ figcaption span {
 	color: red;
 	font-weight: bolder;
 }
-#products > div > button {
+#order > div > button {
 	padding: 5px 10px;
 }
 
