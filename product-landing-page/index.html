@@ -1,9 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>FCC Product Landing Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>FCC Project: Product Landing Page - By George Appiah</title>
+		<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <div id="PageWrapper">  
+				<header id="header">
+						<div id="branding">
+								<img src="logo-rebeccapurple.jpg" alt="Logo" id="header-img">
+						</div>
+						<nav id="nav-bar">
+								<ul>
+										<li><a href="#intro" class="nav-link">Home</a></li>
+										<li><a href="#order" class="nav-link">Order Now</a></li>
+										<li><a href="#contact" class="nav-link">Contact Us</a></li>
+								</ul>
+						</nav>
+				</header>
+				<main>
+						<section id="intro">
+								<h2>EXPERIENCE OUR AWESOME CHOCOLATES</h2>
+		
+								<p>We sacrifice <strong>everything</strong> to prepare the most delicious chocolates for you. Watch this video to see how we make our chocolates, and order your favorite chocolate now while your taste buds area still in top gear!</p>
+		
+								<div style="position: relative;overflow: hidden;padding-top: 56.25%;">
+										<iframe id="video" src="https://www.youtube.com/embed/BYwWMjepGdc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+						</section>
+						<div id="order">
+								<div>
+										<figure>	
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Angel_food_cake_with_strawberries_%284738859336%29.jpg/180px-Angel_food_cake_with_strawberries_%284738859336%29.jpg" alt="Angel Food Cake">
+										<figcaption>Angel Food Cake: <span>$18</span></figcaption>
+										</figure>
+										<button>Add to Cart</button>
+								</div>
+								<div>
+										<figure>	
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Baba_or_babka_wielkanocna.jpg/180px-Baba_or_babka_wielkanocna.jpg" alt="Babka">
+										<figcaption>Babka: <span>$22</span></figcaption>
+										</figure>
+										<button>Add to Cart</button>
+								</div>
+								<div>	
+										<figure>	
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Banana_cake.jpg/180px-Banana_cake.jpg" alt="Banana Cake">
+										<figcaption>Banana Cake: <span>$36</span></figcaption>
+										</figure>
+										<button>Add to Cart</button>
+								</div>
+								<div>
+										<figure>	
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Chocolate_Stout_Cake.jpg/180px-Chocolate_Stout_Cake.jpg" alt="Beer Cake">
+										<figcaption>Beer Cake: <span>$12</span></figcaption>
+										</figure>
+										<button>Add to Cart</button>
+								</div>
+								<div>
+										<figure>	
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Plain_butterfly_cake.jpg/180px-Plain_butterfly_cake.jpg" alt="Butterfly Cake">
+										<figcaption>Butterfly Cake: <span>$25</span></figcaption>
+										</figure>
+										<button>Add to Cart</button>
+								</div>
+								<div>
+										<figure>	
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Chiffon_cake_02.jpg/180px-Chiffon_cake_02.jpg" alt="Chiffon Cake">
+										<figcaption>Chiffon Cake: <span>$25</span></figcaption>
+										</figure>
+										<button>Add to Cart</button>
+								</div>
+						</div> <!-- End #products -->
+				</main>
+				<aside id="contact">
+						<div>
+								<h2>CONTACT JAWBONE</h2>
+								<p>We'd love to hear from. Please use the form here to submit your question, complaint or comment, and one of our <del>lazy slaves</del> awesome staff will get in touch with you ASAP. Thanks!</p>
+						</div>
+						<form id="form" action="https://www.freecodecamp.com/email-submit">
+								<input type="text" id="name" placeholder="Your Name" name="name" required>
+								<input type="email" id="email" placeholder="Email Address" name="email" required>
+								<textarea rows="10">
+										Your Message or Question
+								</textarea>
+								<input type="checkbox" checked><labe>I'd *LOVE* to receive your email newsletter!</labe>
+					<input type="submit" name="Submit" id="submit">
+				</form>
+				</aside>
+				<footer>
+						<p>FCC <em>Product Landing Page</em> Project by <a href="https://www.georgeappiah.com">George Appiah</a>.</p>
+				</footer>
+				</div>
 </body>
 </html>
