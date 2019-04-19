@@ -1,0 +1,120 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#PageWrapper {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 1fr 50px;
+    grid-template-areas: 
+      "branding branding"
+      "navbar main"
+      "footer footer";
+  }
+
+  @media only screen and (max-width:768px) {
+    #PageWrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 450px 1fr 50px;
+        grid-template-areas: 
+          "branding"
+          "navbar"
+          "main"
+          "footer";
+      }
+        
+}
+
+  #branding {
+    grid-area: branding;
+    background-color: rebeccapurple;
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  #main-doc {
+    grid-area: main;
+    margin-top: 55px;
+    padding: 0 30px;
+  }
+  
+  .main-section header {
+      font-size: 28px;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 20px;
+  }
+
+  .main-section p, code {
+      font-size: 20px;
+      margin: 20px 0px;
+  }
+
+  .main-section ul {
+      margin: 20px 0px 20px 40px;
+  }
+
+  .main-section ul li {
+      margin: 10px 0;
+      font-size: 20px;
+  }
+
+  #navbar {
+    grid-area: navbar;
+    background: #f5f5f5;
+  }
+
+  #navbar header {
+    background: #ccc;
+    padding: 10px 0px 10px 10px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    font-weight: bold;
+    font-size: 26px;
+  }
+
+#navbar header span {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+  #navbar ul {
+    padding: 0px 0 0px 0px;
+  }
+
+  #navbar ul li {
+      list-style: none;
+      background: #ccc;
+    border-bottom: 1px solid black;
+  }
+
+#navbar li a {
+    padding: 10px 0 10px 10px;
+    display: block;
+    text-decoration: none;
+    color: rebeccapurple;
+}
+  
+#navbar ul li a:hover {
+    background: rebeccapurple;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+  #footer {
+    grid-area: footer;
+    background: rebeccapurple;
+    text-align:center;
+    color: white;
+    padding: 20px;
+  }
+
+  #footer a {
+      color: white;
+  }
