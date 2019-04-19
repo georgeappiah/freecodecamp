@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+		<title>FCC Project: Product Landing Page - By George Appiah</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>FCC Project: Product Landing Page - By George Appiah</title>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="description" content="Free Code Camp Project - Product Landing Page - Built by George Appiah. Follow me on Twitter @GeorgeAppiah">
+		<meta name="author" content="George Appiah">
 		<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,7 +29,7 @@
 		
 								<p>We sacrifice <strong>everything</strong> to prepare the most delicious chocolates for you. Watch this video to see how we make our chocolates, and order your favorite chocolate now while your taste buds area still in top gear!</p>
 		
-								<div style="position: relative;overflow: hidden;padding-top: 56.25%;">
+								<div class="resp-iframe">
 										<iframe id="video" src="https://www.youtube.com/embed/BYwWMjepGdc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
 						</section>
@@ -74,23 +76,24 @@
 										</figure>
 										<button>Add to Cart</button>
 								</div>
-						</div> <!-- End #products -->
+						</div> <!-- End #order -->
 				</main>
 				<aside id="contact">
 						<div>
 								<h2>CONTACT JAWBONE</h2>
 								<p>We'd love to hear from. Please use the form here to submit your question, complaint or comment, and one of our <del>lazy slaves</del> awesome staff will get in touch with you ASAP. Thanks!</p>
+								<p><strong>George Appiah</strong>, <br>Chief Trouble Maker<br> Jawbone Chocolates</p>
 						</div>
 						<form id="form" action="https://www.freecodecamp.com/email-submit">
 								<input type="text" id="name" placeholder="Your Name" name="name" required>
 								<input type="email" id="email" placeholder="Email Address" name="email" required>
 								<textarea rows="10">Your Message or Question</textarea>
-								<input type="checkbox" checked><labe>I'd *LOVE* to receive your email newsletter!</labe>
-					<input type="submit" name="Submit" id="submit">
+								<input type="checkbox" checked><label>I'd *LOVE* to receive your email newsletter!</label>
+								<input type="submit" name="Submit" id="submit" value="SEND NOW"> 
 				</form>
 				</aside>
 				<footer>
-						<p>FCC <em>Product Landing Page</em> Project by <a href="https://www.georgeappiah.com">George Appiah</a>.</p>
+						<p>FCC Project: <em>Product Landing Page</em> by <a href="https://www.georgeappiah.com/">George Appiah</a>.</p>
 				</footer>
 				</div>
 </body>

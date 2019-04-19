@@ -117,21 +117,43 @@ flex: 1;
 }
 
 aside > div {
-justify-self: center;
-align-self: center; 
+justify-self: center; 
 }
 
 aside p {
 font-size: 22px;
 font-style: italic;
+margin-bottom: 20px;
 }
 
 form {
 min-width: 300px;
 }
 
-input[type=text], input[type=email], input[type=submit], textarea {
+input[type=text], input[type=email], textarea {
 	width: 100%;
+	font-size: 20px;
+}
+
+label, input[type=radio] {
+	font-size: 20px;
+	padding-left: 10px;
+}
+
+input[type=submit] {
+	border: 2px solid rebeccapurple;
+	background: #f5f5f5;
+	color: rebeccapurple;
+	font-size: 20px;
+	display: block;
+	margin: 10px auto;
+	width: 200px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	line-height: 1.4;
+	padding: 5px;
+	
 }
 
 footer {
@@ -142,8 +164,19 @@ footer {
 	text-align: center;
 }
 
+footer p a {
+	color: #f5f5f5;
+	font-weight: bold;
+}
+
 @media print {
 nav {
 display: none;
 }
+}
+
+.resp-iframe {
+	position: relative;
+	overflow: hidden;
+	padding-top: 56.25%;
 }
