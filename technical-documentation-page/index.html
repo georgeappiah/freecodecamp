@@ -17,7 +17,7 @@
 
     <main id="main-doc">
 
-    <section id="intro" class="main-section">
+    <div id="intro">
 
         <h1>WordPress&reg; In Ten Minutes</h1>
 
@@ -26,7 +26,8 @@
         <p>From its beginning as basic blogging software, the WordPress software has evolved to become a general purpose contentment management system and web application platform, powering more than a third of all the websites on the Internet.</p>
         
         <p>In this short WordPress primer, we'll go over the humble beginning of this amazing software, and explore how to build, host, and manage a fast and secure WordPress website. Let's jump right in!</p>
-    </section>
+
+    </div>
 
     <section id="In_The_Beginning" class="main-section">
 
@@ -62,15 +63,14 @@
 
         <p>WordPress themes are generally classified into two categories: free and premium. Many free themes are listed in the WordPress theme directory, and premium themes are available for purchase from marketplaces and individual WordPress developers.</p>
 
-        <p>WordPress users may also create and develop their own custom themes. The free theme Underscores created by the WordPress developers has become a popular basis for new themes.</p>
-
+        <p>WordPress users may also create and develop their own custom themes. At a minimum, a WordPress theme requires four files: <code>style.css</code> which contains the CSS of the site and where information about the theme are defined, <code>index.php</code> which is the main template file used to render pages; <code>comments.php</code> used wherever comments are allowed to provide threaded comments, and <code>screenshot.png</code> file which acts as a visual indicator of what the theme looks like. The free theme <a href="https://underscores.me/">Underscores</a> created by the WordPress developers has become a popular basis for new themes.</p>
 
     </section>
     
     <section id="WordPress_Plugins" class="main-section">
         <header>WordPress Plugins</header>
 
-        <p>WordPress' plugin architecture allows users to extend the features and functionality of a website or blog. As of this writing (May 10th, 2019), WordPress.org has over 555,000 plugins available in its official database, each of which offers custom functions and features enabling users to tailor their sites to their specific needs.</p> 
+        <p>WordPress' plugin architecture allows users to extend the features and functionality of a website or blog. As of this writing (May 11th, 2019), WordPress.org has over 555,000 plugins available in its official database, each of which offers custom functions and features enabling users to tailor their sites to their specific needs.</p> 
 
         <p>However, this does not include the commercial plugins that are available elsewhere, which may not be listed in the WordPress.org repository. These customizations range from search engine optimization to client portals used to display private information to logged in users, to content management systems, to content displaying features, such as the addition of widgets and navigation bars.</p>
 
@@ -102,7 +102,9 @@
     <header>WordPress Security</header>
         <p>Success comes with a cost. For WordPress, that cost is increased attacks from never-do-gooders. With tens of millions of installations, many of them unmanaged, out of date and vulnerable, WordPress websites have become attractive targets to kiddie hackers who like to hack and deface websites for the bragging rights, and to criminals who commandeer vulnerable websites and use them for their criminal activities.</p>
 
-        <p>When it comes to WordPress security, there are a lot of things you can do to lock down your site to prevent hackers and vulnerabilities from affecting your website or blog. The last thing you want to happen is to wake up one morning to discover your site in shambles. Luckily, there are simple tips, strategies, and techniques you can use to secure your WordPress and stay protected.</p>
+        <p>When it comes to WordPress security, there are a lot of things you can do to lock down your site to prevent hackers and vulnerabilities from affecting your website or blog. The last thing you want to happen is to wake up one morning to discover your site in shambles.</p>
+
+        <p> Luckily, there are simple tips, strategies, and techniques you can use to secure your WordPress and stay protected... and that begins with your hosting. If you run your own server that hosts multiple websites for clients, ensire that commonly abused PHP features like <code>allow_url_fopen</code>, <code>allow_url_include</code>, <code>open_basedir</code>, etc are either disabled or tweaked to secure your PHP configuration.</p>
 
         <p>The official documentation page, <a href="https://codex.wordpress.org/Hardening_WordPress">Hardening WordPress</a> would be the first place to start if you want to secure your WordPress blog or website. This page has an excellent primer on the various aspects of security to consider (including your own personal computer that you use to access your WordPress website!), as well as specific recommendations and to take to secure your website. The page also includes a link to WordPress security plugins and 3rd-party protection services that can be used to provide additional layers of security for your WordPress website.</p>
 

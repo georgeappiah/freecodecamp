@@ -12,7 +12,19 @@ h1 {
   text-decoration: uppercase;
   font-weight:bold;
   font-size: 50px;
+  border-bottom: 1px solid #ccc;
 }
+
+#intro {
+    margin-bottom: 40px;
+}
+
+#intro p {
+    margin: 20px 0px;
+    font-size: 25px;
+    font-style: italic;  
+}
+
 
 .dropcap {
   color: #663399;
