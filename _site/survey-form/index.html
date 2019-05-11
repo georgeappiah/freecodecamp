@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>FCC Survey Form Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+<header>
+  <h1 id="title">SURVEY FORM</h1>
+  <p id="description">Want to study abroad? Please complete this to let us know how we might be able to help you.</p>
+</header>
+
+<form id="survey-form">
+  <label for="name" id="name-label">Your Name:</label>
+    <input type="text" id="name" placeholder="Please enter your full name" required>
+
+ <label for="email" id="email-label">Your Email: </label>
+   <input type="email" id="email" placeholder="Please enter your best email address" required>
+
+ <label for="number" id="number-label">Your Age:</label>
+   <input type="number" id="number" min="18" max="60" placeholder="Age by 31st October 2019">
+
+  <p>Your Preferred Country</p>
+  <select id="dropdown">
+    <option value="australia">Australia</option>
+    <option value="canada" selected>Canada</option>
+     <option vaue="germany">Germany</option>
+    <option value="us">United States</option>
+    <option value="uk">United Kingdom</option>
+  </select>
+
+  <p>Preferred study mode:</p>
+  <div>
+  <label for="full-time">Full-Time</label>
+    <input type="radio" name="study-mode" value="Full-Time" id="full-time">
+
+  <label for="part-time">Part-Time</label>
+    <input type="radio" name="study-mode" value="Part-Time" id="part-time">
+  <label for="online">Online</label>
+    <input type="radio" name="study-mode" value="Online" id="online">
+  </div>
+
+  <p>Do you have funding secured?</p>
+  <div>
+  <label for="yes">Yes</label>
+    <input type="radio" name="funding" value="Yes" id="yes">
+
+  <label for="no">No</label>
+    <input type="radio" name="funding" value="No" id="no">
+
+  </div>
+
+  <p>Preferred study mode:</p>
+  <div>
+  <label for="english">English
+    <input type="checkbox" name="language" value="English" id="english">
+  </label>
+<label for="french">French
+    <input type="checkbox" name="language" value="French" id="french">
+  </label>
+<label for="german">German
+    <input type="checkbox" name="language" value="German" id="german">
+  </label>
+  </div>
+
+    <p>Your Message:</p>
+    <textarea name="message" rows="10" id="message"></textarea>
+
+  <input type="submit" value="Submit" id="submit">
+
+</form>
+
+<hr>
+
+</main>
+
+<footer>
+<p>Please visit my website at <a href="https://www.georgeappiah.com/">GeorgeAppiah.com</a></p>
+</footer>
+
+</body>
+</html>
